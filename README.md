@@ -1,2 +1,2 @@
 # kolorijo
-asalae ae
+ganti extensi pug
