@@ -1,11 +1,13 @@
 // const produksi = require("../model/produksiModel");
 
+const res = require("express/lib/response");
+const { dirname } = require("path/posix");
 const Produksi = require("../models/produksiModel");
 
 module.exports = app => {
     const produksi = require("../controllers/produksiController");
 
-    app.get("/produksi", produksi.findAll); //temukan semua data
+    app.get("/produksi", produksi.findAll) //temukan semua data
     app.get("/produksi/:produksiId", produksi.findOne); //temukan data per id
     app.post("/produksi", produksi.create); //insert data
     app.put("/produksi/:produksiId", produksi.update); // update per id
