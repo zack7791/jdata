@@ -1,2 +1,2 @@
-# kolorijo
-ganti extensi pug
+kolorijo
+pakai html ben ra mumet!
